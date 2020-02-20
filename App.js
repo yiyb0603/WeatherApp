@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert } from "react-native";
 import Loading from './Loading';
 import Weather from './Weather';
@@ -7,7 +7,7 @@ import * as Location from 'expo-location';
 
 const API_KEY = "522b69877add24a04e4ae4fb87372c30";
 
-export default class extends React.Component {
+export default class extends Component {
   state = {
     isLoading: true
   };
